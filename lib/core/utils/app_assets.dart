@@ -6,4 +6,6 @@ abstract class AppAssets {
   static const reelLogo = '$_basePath/reel_logo.png';
   static const paceLogo = '$_basePath/hse_logo.png';
   static const dwellLogo = '$_basePath/dwell_logo.png';
+  static const hotelogixLogo = '$_basePath/hotelogix_logo.png';
+  static const apexLogo = '$_basePath/apex_logo.png';
 }

@@ -37,7 +37,7 @@ class ProjectActions extends StatelessWidget {
               label: 'Android',
               borderColor: AppColors.primaryColor,
               onPressed: () {
-                if (project.iosApp != null) {
+                if (project.googlePlay != null) {
                   html.window.open(project.googlePlay!, '_blank');
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(

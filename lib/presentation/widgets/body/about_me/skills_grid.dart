@@ -9,8 +9,8 @@ class SkillsGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Wrap(
-      spacing: 16,
-      runSpacing: 16,
+      spacing: 12,
+      runSpacing: 12,
       children: AppConstants.skills.map((skill) => SkillTile(skill)).toList(),
     );
   }

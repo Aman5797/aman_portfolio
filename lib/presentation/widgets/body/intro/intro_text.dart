@@ -34,7 +34,16 @@ class IntroText extends StatelessWidget {
           textAlign: _getTextAlign(context.width),
           softWrap: true,
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: 6),
+        Text(
+          AppStrings.developerTitle,
+          style: context.width < DeviceType.ipad.getMaxWidth()
+              ? AppStyles.s14.copyWith(color: AppColors.primaryColor)
+              : AppStyles.s24.copyWith(color: AppColors.primaryColor),
+          textAlign: _getTextAlign(context.width),
+          softWrap: true,
+        ),
+        const SizedBox(height: 16),
         SizedBox(
           width: context.width < DeviceType.mobile.getMaxWidth()
               ? context.width - 20

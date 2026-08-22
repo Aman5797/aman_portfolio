@@ -1,18 +1,19 @@
 abstract class AppStrings {
   static const String developerName = 'Aman Ansari';
-  static const String helloIM = 'Hello, I’m';
+  static const String developerTitle = 'Mobile App Developer';
+  static const String helloIM = 'Hello, I\'m';
   static const String introMsg =
-      'I build pixel-perfect, engaging, and accessible digital experiences for mobile apps.';
+      'Building scalable cross-platform mobile apps with Flutter & Dart, and native iOS apps with Swift & SwiftUI.';
   static String aboutMeMsg =
-      "I am working as a Software Engineer in Appinventiv Technologies with 3+ years of experience in Mobile App Development. I have good knowledge and hands-on experience with Flutter SDK. I have developed mobile apps across all the verticals such as E-Commerce, Fintech, Video Streaming, and Audio Engineering.";
-  static const String numOfExperience = '3+';
+      "Mobile App Developer with 5+ years of experience building scalable cross-platform mobile applications using Flutter and Dart. Proficient in BLoC, MVVM, Firebase, and REST API integration, with a strong focus on performance optimization and clean architecture. Delivered 10+ production apps across e-commerce, social, and utility domains with 50K+ downloads and 4.5+ ratings.";
+  static const String numOfExperience = '5+';
   static const String experienceMsg =
-      'Years of expertise in developing complex solutions across various platforms and frameworks, consistently delivering high-quality products on time.';
+      'Years of expertise in delivering 10+ production apps across e-commerce, social, and utility domains — with 50K+ downloads and 4.5+ store ratings on average.';
   static const String mySkills = 'My Skills';
   static const String featuredProjects = 'Featured Projects';
   static const String projectsMsg =
-      "Here, you will find some of the projects that I have worked on.";
+      "Here are some of the production apps I have built and shipped.";
   static const String contactMsg =
-      "I'm open to Job opportunities where I can contribute, learn and grow. If you have any good opportunity that matches my skills and experience, then feel free to Contact me.";
+      "I'm open to job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience, feel free to contact me.";
   static const String contact = 'Contact';
 }
