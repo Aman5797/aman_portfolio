@@ -58,6 +58,7 @@ abstract class AppConstants {
           'https://apps.apple.com/in/app/hotelogix-mobile-hotel/id1194551150',
       googlePlay:
           'https://play.google.com/store/apps/details?id=com.pocketpms.app&hl=en_IN',
+      techTags: ['Flutter', 'Dart', 'OCR', 'Biometrics', 'BLoC', 'REST API'],
     ),
     Project(
       name: 'Dwellspring',
@@ -68,20 +69,24 @@ abstract class AppConstants {
           "https://apps.apple.com/us/app/dwellspring-sleep-sounds/id6479635936",
       googlePlay:
           'https://play.google.com/store/apps/details?id=com.dwell_spring.client',
+      techTags: ['Flutter', 'Audio Engine', 'In-App Purchases', 'BLoC', 'SQLite'],
     ),
     Project(
       name: 'Reel Media: Fan App',
       imagePath: AppAssets.reelLogo,
       description:
           'Multifunctional event platform with ticket purchases, QR scanning, Stripe payments, ticket PDFs, and biometric authentication for secure event access.',
+      techTags: ['Flutter', 'Stripe', 'QR Scanner', 'Biometrics', 'PDF Gen'],
     ),
     Project(
-        name: 'Rise',
-        imagePath: AppAssets.riseLogo,
-        description:
-            'Social media app for sharing health awareness posts, stories, and reels. Features one-to-one chat and community-driven content sharing.',
-        iosApp: "https://www.risehealth.world/",
-        googlePlay: "https://www.risehealth.world/"),
+      name: 'Rise',
+      imagePath: AppAssets.riseLogo,
+      description:
+          'Social media app for sharing health awareness posts, stories, and reels. Features one-to-one chat and community-driven content sharing.',
+      iosApp: "https://www.risehealth.world/",
+      googlePlay: "https://www.risehealth.world/",
+      techTags: ['Flutter', 'Firebase', 'Chat Engine', 'Video Player', 'AWS'],
+    ),
     Project(
       name: 'Pace: HSE',
       imagePath: AppAssets.paceLogo,
@@ -90,12 +95,14 @@ abstract class AppConstants {
       iosApp: 'https://apps.apple.com/us/app/pace-hse/id1549816913',
       googlePlay:
           'https://play.google.com/store/apps/details?id=com.teknobuilt.pace_hse',
+      techTags: ['Flutter', 'Auditing', 'Enterprise', 'Offline Sync', 'REST API'],
     ),
     Project(
       name: 'Apex Predator Explorer',
       imagePath: AppAssets.apexLogo,
       description:
           'Native iOS app built with SwiftUI & MVVM featuring dynamic List, NavigationStack, search filtering, animations, and REST API integration with Codable JSON parsing.',
+      techTags: ['Swift', 'SwiftUI', 'MVVM', 'NavigationStack', 'Codable'],
     ),
   ];
 }

@@ -16,4 +16,10 @@ abstract class AppStrings {
   static const String contactMsg =
       "I'm open to job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience, feel free to contact me.";
   static const String contact = 'Contact';
+  static const String linkedinUrl =
+      'https://www.linkedin.com/in/mdamanansari/';
+  static const String resumeUrl =
+      'https://drive.google.com/file/d/1fF0A8JiKg6n7WEzgTav8RwleGSXy4-Wg/view?usp=sharing';
+  static const String contactApiUrl = '/api/contact';
 }
+

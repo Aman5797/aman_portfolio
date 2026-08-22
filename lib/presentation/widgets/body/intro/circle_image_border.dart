@@ -9,15 +9,15 @@ class CircleImageBorder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final responsiveSize = ResponsiveSize(
+    final size = ResponsiveSize(
       deviceWidth: context.width,
       mobileSize: context.width * .62,
       ipadSize: context.width * .4,
       smallScreenSize: context.width * .29,
-    );
+    ).getSize()!;
     return Container(
-      width: responsiveSize.getSize(),
-      height: responsiveSize.getSize(),
+      width: size,
+      height: size,
       decoration: BoxDecoration(
         color: AppColors.primaryColor,
         shape: BoxShape.circle,

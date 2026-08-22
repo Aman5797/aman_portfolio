@@ -20,7 +20,7 @@ class Skill {
     this.materialIconData,
   });
 
-  String get iconUrl => 'https://cdn.simpleicons.org/$iconSlug/ffffff';
+  String get iconUrl => 'https://cdn.simpleicons.org/$iconSlug?color=fff';
 
   bool get hasNetworkIcon => iconSlug != null;
   bool get hasFaIcon => faIconData != null;

@@ -1,0 +1,11 @@
+{
+  "name": "aman-portfolio",
+  "version": "1.0.0",
+  "description": "Mohd Aman Ansari Portfolio Web App",
+  "scripts": {
+    "build": "flutter build web --release"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}

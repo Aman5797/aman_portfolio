@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/app_enums.dart';
+import '../../../../core/utils/app_extensions.dart';
+import 'contact_form.dart';
 import 'contact_intro.dart';
 
 class ContactSection extends StatelessWidget {
@@ -7,28 +10,32 @@ class ContactSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(bottom: 80),
-      child: ContactIntro(),
-      // context.width > DeviceType.ipad.getMaxWidth()
-      //     ? const Row(
-      //         crossAxisAlignment: CrossAxisAlignment.start,
-      //         children: [
-      //           Expanded(
-      //             child: ContactIntro(),
-      //           ),
-      //           SizedBox(width: 32),
-      //           Expanded(child: ContactForm()),
-      //         ],
-      //       )
-      //     : const Column(
-      //         crossAxisAlignment: CrossAxisAlignment.center,
-      //         children: [
-      //           ContactIntro(),
-      //           SizedBox(height: 32),
-      //           ContactForm(),
-      //         ],
-      //       ),
+    final isDesktop = context.width > DeviceType.ipad.getMaxWidth();
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 40),
+      child: isDesktop
+          ? const Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  flex: 5,
+                  child: ContactIntro(),
+                ),
+                SizedBox(width: 48),
+                Expanded(
+                  flex: 6,
+                  child: ContactForm(),
+                ),
+              ],
+            )
+          : const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ContactIntro(),
+                SizedBox(height: 36),
+                ContactForm(),
+              ],
+            ),
     );
   }
 }

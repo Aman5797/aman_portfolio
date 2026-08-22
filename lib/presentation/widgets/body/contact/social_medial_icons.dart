@@ -72,14 +72,14 @@ class _SocialMediaIconBtnState extends State<SocialMediaIconBtn> {
     );
   }
 
-  void _onExit(event) {
+  void _onExit(PointerEvent event) {
     setState(() {
       bgColor = AppColors.transparent;
       itemColor = AppColors.primaryColor;
     });
   }
 
-  void _onEnter(event) {
+  void _onEnter(PointerEvent event) {
     setState(() {
       bgColor = AppColors.primaryColor;
       itemColor = AppColors.white;
