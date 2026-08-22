@@ -5,6 +5,10 @@ import 'bloc_observer.dart';
 import 'portfolio_app.dart';
 
 void main() {
-  Bloc.observer = MyBlocObserver();
+  // BlocObserver only runs in debug mode — no console noise in production.
+  assert(() {
+    Bloc.observer = MyBlocObserver();
+    return true;
+  }());
   runApp(const PortfolioApp());
 }
