@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Skill {
   final String name;
@@ -8,7 +9,7 @@ class Skill {
   final String? iconSlug;
 
   /// FontAwesome icon data — render with FaIcon
-  final IconData? faIconData;
+  final FaIconData? faIconData;
 
   /// Material icon data — render with Icon
   final IconData? materialIconData;

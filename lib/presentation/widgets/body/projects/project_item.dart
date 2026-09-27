@@ -94,7 +94,8 @@ class _ProjectItemState extends State<ProjectItem> {
                       _IconButton(
                         icon: FontAwesomeIcons.apple,
                         tooltip: 'App Store',
-                        onTap: () => html.window.open(project.iosApp!, '_blank'),
+                        onTap: () =>
+                            html.window.open(project.iosApp!, '_blank'),
                       ),
                     if (project.googlePlay != null) ...[
                       const SizedBox(width: 8),
@@ -186,7 +187,7 @@ class _IconButton extends StatefulWidget {
     required this.onTap,
   });
 
-  final IconData icon;
+  final FaIconData icon;
   final String tooltip;
   final VoidCallback onTap;
 
@@ -216,9 +217,8 @@ class _IconButtonState extends State<_IconButton> {
                   : AppColors.glassBg,
               shape: BoxShape.circle,
               border: Border.all(
-                color: _isHovered
-                    ? AppColors.primaryColor
-                    : AppColors.glassBorder,
+                color:
+                    _isHovered ? AppColors.primaryColor : AppColors.glassBorder,
               ),
             ),
             child: FaIcon(

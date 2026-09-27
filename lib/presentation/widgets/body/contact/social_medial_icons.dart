@@ -39,7 +39,7 @@ class SocialMediaIcons extends StatelessWidget {
 
 class SocialMediaIconBtn extends StatefulWidget {
   const SocialMediaIconBtn({super.key, required this.icon, this.link});
-  final IconData icon;
+  final FaIconData icon;
   final String? link;
 
   @override
@@ -63,7 +63,7 @@ class _SocialMediaIconBtnState extends State<SocialMediaIconBtn> {
         onPressed: () {
           html.window.open(widget.link!, '_blank');
         },
-        child: Icon(
+        child: FaIcon(
           widget.icon,
           color: itemColor,
           size: 32,
