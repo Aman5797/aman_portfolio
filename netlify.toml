@@ -1,5 +1,5 @@
 [build]
-  command = "flutter build web --release"
+  command = "flutter build web --release --no-tree-shake-icons"
   publish = "build/web"
 
 [functions]

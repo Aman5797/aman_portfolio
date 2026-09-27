@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Mohd Aman Ansari Portfolio Web App",
   "scripts": {
-    "vercel-build": "if [ ! -d \"$HOME/flutter\" ]; then git clone https://github.com/flutter/flutter.git --depth 1 -b stable $HOME/flutter; fi && export PATH=\"$PATH:$HOME/flutter/bin\" && flutter build web --release",
-    "build": "flutter build web --release"
+    "vercel-build": "if [ ! -d \"$HOME/flutter\" ]; then git clone https://github.com/flutter/flutter.git --depth 1 -b stable $HOME/flutter; fi && export PATH=\"$PATH:$HOME/flutter/bin\" && flutter build web --release --no-tree-shake-icons",
+    "build": "flutter build web --release --no-tree-shake-icons"
   },
   "dependencies": {
     "nodemailer": "^6.9.14"
